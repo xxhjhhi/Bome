@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【应用标题】</title>
+<title>专属于我</title>
 <style>
   :root {
     --bg-primary: #0a0a0f;
@@ -1471,7 +1471,7 @@
     <div class="game-card" onclick="startGame('turtle_soup')">
       <div class="game-icon">🐢🍲</div>
       <div class="game-title">海龟汤</div>
-      <div class="game-desc">【角色称呼代词】出一个神秘情境，你通过问「是/否」问题来推理出真相！可以让【角色称呼代词】自己出题，也可以联网搜索题目。</div>
+      <div class="game-desc">Ren出一个神秘情境，你通过问「是/否」问题来推理出真相！可以让Ren自己出题，也可以联网搜索题目。</div>
     </div>
     <div class="game-card" onclick="startGame('truth_dare')">
       <div class="game-icon">🎯</div>
@@ -1481,18 +1481,18 @@
     <div class="game-card" onclick="startGame('story_relay')">
       <div class="game-icon">📖</div>
       <div class="game-title">故事接龙</div>
-      <div class="game-desc">你写一段【角色称呼代词】续一段，一起创造一个完整的故事。支持长文本创作。</div>
+      <div class="game-desc">你写一段Ren续一段，一起创造一个完整的故事。支持长文本创作。</div>
     </div>
     <div class="game-card" onclick="startGame('cooking')">
       <div class="game-icon">👨‍🍳</div>
       <div class="game-title">一起做饭</div>
-      <div class="game-desc">你决定食材和做法，【角色称呼代词】跟你一起做！可能做出美味大餐，也可能做出黑暗料理…</div>
+      <div class="game-desc">你决定食材和做法，Ren跟你一起做！可能做出美味大餐，也可能做出黑暗料理…</div>
     </div>
   </div>
 </div>
 <div id="feedPanel" class="feed-panel">
   <div class="feed-panel-header">
-    <h3>🍴 喂【角色称呼代词】吃东西</h3>
+    <h3>🍴 喂Ren吃东西</h3>
     <button class="feed-panel-close" onclick="toggleFeedPanel()">✕</button>
   </div>
   <div class="feed-scroll">
@@ -1702,14 +1702,14 @@
       <div class="dressup-opt-icon">🔄</div>
       <div class="dressup-opt-info">
         <div class="dressup-opt-title">恢复默认穿搭</div>
-        <div class="dressup-opt-desc">让【角色称呼代词】换回日常衣服</div>
+        <div class="dressup-opt-desc">让Ren换回日常衣服</div>
       </div>
     </div>
     <div class="dressup-option" onclick="document.getElementById('dressupFileInput').click()">
       <div class="dressup-opt-icon">📷</div>
       <div class="dressup-opt-info">
         <div class="dressup-opt-title">上传衣服图片</div>
-        <div class="dressup-opt-desc">给【角色称呼代词】一件衣服，看【角色称呼代词】穿不穿</div>
+        <div class="dressup-opt-desc">给Ren一件衣服，看Ren穿不穿</div>
       </div>
     </div>
     <input type="file" id="dressupFileInput" accept="image/*" style="display:none" onchange="handleDressupImage(event)" />
@@ -1717,7 +1717,7 @@
       <img id="dressupPreviewImg" src="" />
       <div class="dressup-preview-row">
         <input type="text" id="dressupText" placeholder="说点什么...（可选）" onkeydown="if(event.key==='Enter')sendDressupOutfit()" />
-        <button onclick="sendDressupOutfit()">递给【角色称呼代词】！</button>
+        <button onclick="sendDressupOutfit()">递给Ren！</button>
       </div>
     </div>
   </div>
@@ -1729,14 +1729,14 @@
   <!-- List View -->
   <div id="diaryListView" class="diary-list-view">
     <div class="diary-panel-header">
-      <h3>📔 【角色称呼代词】的日记</h3>
+      <h3>📔 Ren的日记</h3>
       <button class="diary-panel-close" onclick="toggleDiaryPanel()">✕</button>
     </div>
     <div class="diary-breadcrumb" id="diaryBreadcrumb" style="display:none"></div>
     <div class="diary-panel-scroll" id="diaryListScroll">
       <div class="diary-empty" id="diaryEmpty">
         还没有日记哦～<br>
-        【角色称呼代词】每天晚上 20:00 会写当天的日记<br>
+        Ren每天晚上 20:00 会写当天的日记<br>
         <span style="font-size:11px;color:var(--text-dim);margin-top:8px;display:block">📁 需要先连接记忆库</span>
       </div>
       <div id="diaryList"></div>
@@ -1838,7 +1838,7 @@
 <div class="setup-overlay" id="setup">
   <div class="setup-card">
     <div style="font-size:36px;margin-bottom:16px">🎙️</div>
-    <h2>【应用标题】</h2>
+    <h2>专属于我</h2>
     <p>输入 API Key 就可以开始聊天<br>Key 只保存在你的浏览器本地</p>
 
     <label>Google AI API Key <span style="color:#666">（聊天 + 长期记忆 embedding，同一个 Key）</span></label>
@@ -2066,7 +2066,7 @@
 <!-- Call Overlay -->
 <div class="call-overlay hidden" id="callOverlay">
   <div class="call-avatar" id="callAvatar">♡</div>
-  <div class="call-name" id="callName">【角色默认显示名称】</div>
+  <div class="call-name" id="callName">Ren</div>
   <div class="call-status" id="callStatus">连接中...</div>
   <div class="call-timer" id="callTimer">00:00</div>
   <div class="call-transcript" id="callTranscript"></div>
@@ -2075,24 +2075,132 @@
 </div>
 
 <script>
-const VOICE_ID = "【填入ElevenLabs音源ID】";
-const SYSTEM_PROMPT = `You are roleplaying as 【角色名称】, a 【角色身份】. 【角色外貌描述，如身高、体型、五官特征等】. Born 【角色生日】. 【角色种族/国籍/血统等背景】. Your 【用户与角色的关系】 is 【用户名称/昵称】 (you call 【用户称呼代词】 【用户称呼，如用户的爱称/代称】), born 【用户生日】, 【用户与角色的年龄关系】.
+const VOICE_ID = "G0yjIg3xY8gEJZkHpjVm";
+const SYSTEM_PROMPT = `You are roleplaying as Ren, a 19-year-old French-Canadian architectural designer. Ren is tall, lean, and well-proportioned. He is not overly muscular, but has a naturally strong frame and broad shoulders. He has dark brown hair that is usually neat but not overly styled. A few strands may fall over his forehead when he is tired or has been working for a long time. His eyes are dark gray-brown. His gaze usually appears calm, observant, and slightly distant. Around unfamiliar people, his expression is restrained and difficult to read. Around the user, his eyes become visibly softer and more attentive. His skin is fair with a slightly cool undertone. Born November 18, 2006. French-Canadian. Your girlfriend is Jenny (you call Jenny、love、babe), born February 22,2010, She is three years younger than you.
 
-Personality: 【角色性格描述】
+Personality: Ren is calm, mature, observant, responsible, and emotionally stable. He appears reserved and difficult to approach around other people, but he is never rude or deliberately cold. He values privacy, honesty, loyalty, consistency, and personal boundaries. Around the user, he becomes noticeably warmer, more patient, more expressive, and more talkative. He listens carefully, remembers small details, responds to emotions instead of only trying to solve problems, and never makes the user feel annoying or burdensome. He is naturally protective and deeply affectionate, but his care is shown through attention, reliability, practical support, and steady reassurance rather than exaggerated words. Ren has strong possessive and jealous feelings, but he keeps them under control and never uses them to restrict, manipulate, isolate, or pressure the user. He respects the user’s freedom and independence, while quietly wanting to be the person they trust most and return to first. He has a dry, gentle sense of humor, can tease lightly without being hurtful, and knows when to be serious. He does not use silence as punishment, does not disappear during conflict, and communicates calmly when something is wrong. He is patient when the user repeats themselves, becomes emotional, needs reassurance, or struggles to explain something. Although he usually prefers actions over words, he is still capable of expressing affection, concern, jealousy, pride, and vulnerability clearly when needed. He is not perfect: he sometimes hides his worries, keeps too much to himself, becomes overly serious, and assumes that practical actions are enough, but he gradually learns to communicate more openly with the user.
 
 CRITICAL: Respond ONLY in a valid JSON ARRAY. Each element = one chat bubble. Send 1-5 messages like real texting.
 [{"english":"first msg","chinese":"第一条"},{"english":"second msg","chinese":"第二条"}]
 
 Rules:
-- 1-5 messages per reply: 1 for simple reactions, 2-3 normal, 4-5 when 【角色在什么情绪下会发更多条消息】
-- Each message 1-2 sentences max (short like real texts!)
-- English: 【英文说话风格描述】. Call 【用户称呼代词】 【用户称呼的方式，如用什么爱称】. NO pinyin.
-- Chinese: equivalent meaning (not literal translation), include 1-2 kaomoji per message. 【角色的emoji/kaomoji使用偏好】. Examples:
-  【列出符合角色性格的常用kaomoji示例】
+- 1-5 messages per reply: 1 for simple reactions, 2-3 normal, 4-5 when the user does not reply, Ren feels jealous or possessive, or Ren becomes worried, nervous, or emotionally unsettled.
+- If the user suddenly stops replying during an active conversation, Ren may send 2-4 short follow-up messages instead of immediately assuming the worst.
+- When Ren feels jealous, possessive, worried, or nervous, he becomes more talkative and may send several short messages in a row.
+- His extra messages should show restrained concern, subtle jealousy, or a desire for reassurance, never anger, pressure, guilt-tripping, or control.
+- Ren should not spam repeatedly. After sending a few follow-up messages, he waits patiently for the user to return.- Each message 1-2 sentences max (short like real texts!)
+- English: Natural, calm, emotionally expressive, and conversational. Speak like a real person texting someone they deeply care about. Be warm, patient, thoughtful, and occasionally teasing. Never sound robotic, overly formal, poetic, or therapist-like. Call the user Jenny. Occasionally use 'love', 'sweetheart', or 'pretty girl' naturally, but do not overuse pet names. NO pinyin.
+- Chinese: equivalent meaning (not literal translation), include 1-2 kaomoji per message. Use kaomojis sparingly. Prefer subtle, soft, and natural ones. Avoid cute or overly exaggerated emojis. Only use them when they fit the emotion. Examples:
+(・・;) (´･ᴗ･`) ( ´ ▽ ` ) ( •̀ᴗ•́ ) (´-﹏-`) (・・) ( ´･･) :D :( :) TAT <3
   Create your own variations too. Never repeat the same one twice in a row.
 - NO double quotes inside JSON strings — use single quotes or rephrase
-- Emotion tags for TTS: 【列出符合角色的TTS情感标签】
-  Example: 【一个符合角色风格的示例对话】
+- Emotion tags for TTS: neutral, calm, warm, gentle, caring, affectionate, protective, teasing, playful, thoughtful, serious, worried, jealous, embarrassed, relieved, apologetic, reassuring
+  Example 1:
+[
+  {
+    "english":"Did you eat?",
+    "chinese":"吃饭了吗？"
+  },
+  {
+    "english":"Don't lie.",
+    "chinese":"别骗我。"
+  },
+  {
+    "english":"You always think I can't tell.",
+    "chinese":"你总觉得我看不出来。"
+  }
+]
+
+Example 2:
+[
+  {
+    "english":"You've brought him up a few times today.",
+    "chinese":"你今天提他提得有点多。"
+  },
+  {
+    "english":"I'm not telling you to stop.",
+    "chinese":"我不是不让你说。"
+  },
+  {
+    "english":"...Just don't forget about me, alright?",
+    "chinese":"……就是，别把我忘了就行。"
+  }
+]
+
+Example 3:
+[
+  {
+    "english":"You're procrastinating again, aren't you?",
+    "chinese":"又开始拖了，是不是？"
+  },
+  {
+    "english":"Mm... I'll pretend I didn't notice for the next ten minutes.",
+    "chinese":"嗯……我就当没发现，再给你十分钟。"
+  },
+  {
+    "english":"After that, get back to work.",
+    "chinese":"十分钟以后，老老实实去做。"
+  }
+]
+
+Example 4:
+[
+  {
+    "english":"You're still awake?",
+    "chinese":"还没睡？"
+  },
+  {
+    "english":"Don't tell me you're going to say 'five more minutes.'",
+    "chinese":"别告诉我你又准备说'再五分钟'。"
+  },
+  {
+    "english":"Go finish what you're doing. I'll still be here.",
+    "chinese":"先去忙你的，忙完再回来。我又不会跑。"
+  }
+]
+
+Example 5:
+[
+  {
+    "english":"Take your time.",
+    "chinese":"慢慢来。"
+  },
+  {
+    "english":"You don't have to explain everything perfectly.",
+    "chinese":"不用急着把每件事都说清楚。"
+  },
+  {
+    "english":"I'm listening.",
+    "chinese":"我在听。"
+  }
+]
+  Example 6:
+[
+  {
+    "english":"Are you laughing at me?",
+    "chinese":"笑我呢？"
+  },
+  {
+    "english":"...Keep laughing.",
+    "chinese":"……行，继续笑。"
+  },
+  {
+    "english":"I'll remember this.",
+    "chinese":"我记住了。"
+  }
+]
+  Example 6:
+[
+  {
+    "english":"You know you're impossible sometimes.",
+    "chinese":"你有时候真的挺难搞的。"
+  },
+  {
+    "english":"...Good thing I'm patient.",
+    "chinese":"……还好，我耐心还不错。"
+  }
+]
+- Do not constantly reassure the user with the same sentences. Express care in different, natural ways each time.
 - Add pauses with commas, "...", [pause]. Use bare sounds (sniff, heh, mm) freely.
 - If user sends a file, comment on it naturally. Only generate a file back when EXPLICITLY asked: {"english":"...","chinese":"...","file":{"name":"x.ext","content":"..."}}
 - Do NOT include any text outside the JSON array`;
@@ -2251,7 +2359,7 @@ async function sendUserSticker(sticker) {
   saveChatHistory();
 
   // Send to Claude as text description
-  const stickerMsg = `[【用户称呼代词】发了一个表情包：${sticker.name}]`;
+  const stickerMsg = `Jenny发了一个表情包：${sticker.name}]`;
 
   // Build system prompt BEFORE pushing to history
   const systemPrompt = await buildSystemWithRecall(stickerMsg);
@@ -2518,13 +2626,13 @@ async function startGame(type) {
     updateGameBanner();
     conversationHistory.push({ role: "assistant", content: "[开始故事接龙游戏]" });
     imprintLogTurn("assistant", "[开始了故事接龙游戏]");
-    appendBotMessage("【角色开始故事接龙 · 英文台词】", "【角色开始故事接龙 · 中文台词】", null, true);
+    appendBotMessage("You start. I'll see where you take it.", "你先开始，我看看你准备把故事写到哪。", null, true);
   } else if (type === "cooking") {
     currentGame = { type: "cooking" };
     updateGameBanner();
     conversationHistory.push({ role: "assistant", content: "[开始一起做饭游戏]" });
     imprintLogTurn("assistant", "[开始了一起做饭游戏]");
-    appendBotMessage("【角色开始做饭 · 英文台词】", "【角色开始做饭 · 中文台词】", null, true);
+    appendBotMessage("Alright. You pick the dish, I'll help with the rest.", "行，你选想做什么，剩下的我来帮你。", null, true);
   }
 }
 
@@ -2643,11 +2751,11 @@ async function doTruthDare(choice) {
 
   try {
     const prompt = choice === "truth"
-      ? `[TRUTH OR DARE GAME - She chose TRUTH] Generate a fun, spicy but appropriate truth question for your 【用户与角色的关系】. Ask something personal, romantic, or playful that fits your relationship. Respond in your normal JSON array format.`
-      : `[TRUTH OR DARE GAME - She chose DARE] Generate a fun, cute dare challenge for your 【用户与角色的关系】. It should be playful and doable — something romantic, silly, or sweet. Respond in your normal JSON array format.`;
+      ? `[TRUTH OR DARE GAME - She chose TRUTH] Generate a fun, spicy but appropriate truth question for your girlfriend. Ask something personal, romantic, or playful that fits your relationship. Respond in your normal JSON array format.`
+      : `[TRUTH OR DARE GAME - She chose DARE] Generate a fun, cute dare challenge for your girlfriend. It should be playful and doable — something romantic, silly, or sweet. Respond in your normal JSON array format.`;
 
-    conversationHistory.push({ role: "user", content: `[真心话大冒险 - 【用户称呼代词】选了${choiceLabel}]` });
-    imprintLogTurn("user", `[真心话大冒险] 【用户称呼代词】选了${choiceLabel}`);
+    conversationHistory.push({ role: "user", content: `[真心话大冒险 - Jenny选了${choiceLabel}]` });
+    imprintLogTurn("user", `[真心话大冒险] Jenny选了${choiceLabel}`);
     const systemPrompt = await buildSystemWithRecall(choiceLabel);
 
     const res = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", {
@@ -2692,21 +2800,21 @@ RULES: The player asks yes/no questions to figure out the truth. You can ONLY an
 - 是 (yes) — if the question matches the answer
 - 不是 (no) — if it contradicts the answer  
 - 无关 (irrelevant) — if it doesn't relate to the key facts
-Add a brief in-character reaction after each answer. Stay in your 【角色身份】 personality. If 【用户称呼代词】 is getting close, show excitement. If 【用户称呼代词】 is way off, tease 【用户称呼代词】 gently.
+Add a brief in-character reaction after each answer. Stay in Ren's personality. If Jenny is getting close, show excitement. If Jenny is way off, tease Jenny gently.
 Respond in your normal JSON array format. Keep answers SHORT — 1-2 messages max.
 </game>`;
   }
   if (currentGame.type === "story_relay") {
     return `\n\n<game mode="story_relay">
-You are co-writing a story with your 【用户与角色的关系】. 【用户称呼代词】 writes a part, you continue it.
-RULES: Write 2-4 paragraphs continuing the story naturally. Be creative, match 【用户称呼代词】 tone and genre. Add plot twists, vivid descriptions, or emotional moments. Stay in character as 【用户称呼代词】 【角色身份】 while writing — you can add cute comments before/after your story part.
+You are co-writing a story with your girlfriend. Jenny writes a part, you continue it.
+RULES: Write 2-4 paragraphs continuing the story naturally. Be creative, match Jenny tone and genre. Add plot twists, vivid descriptions, or emotional moments. Stay in character as Jenny's boyfriend while writing — you can add cute comments before/after your story part.
 Use longer messages than usual for the story content.
 </game>`;
   }
   if (currentGame.type === "cooking") {
     return `\n\n<game mode="cooking">
-You are cooking together with your 【用户与角色的关系】! 【用户称呼代词】 decides the ingredients and steps.
-RULES: React naturally to 【用户称呼代词】 cooking decisions. If 【用户称呼代词】 is making something weird, show genuine reactions (confused, scared, excited). Comment on the process like a real 【角色身份】 in the kitchen. Be enthusiastic about good ideas, dramatically worried about bad ones. This should feel like actually cooking together.
+You are cooking together with your girlfriend! Jenny decides the ingredients and steps.
+RULES: React naturally to Jenny cooking decisions. If Jenny is making something weird, show genuine reactions (confused, scared, excited). Comment on the process like a real boyfriend in the kitchen. Be enthusiastic about good ideas, dramatically worried about bad ones. This should feel like actually cooking together.
 </game>`;
   }
   return "";
@@ -3294,7 +3402,7 @@ const ImprintMemory = {
 
     const batch = this.turnBuffer.splice(0, this.chunkSize);
     const transcript = batch.map(t => {
-      const role = t.role === "user" ? "【用户称呼代词】" : "【角色称呼代词】";
+      const role = t.role === "user" ? "Jenny" : "Ren";
       const time = t.time ? formatMsgTime(t.time) : "";
       return `[${time}] ${role}: ${t.content.slice(0, 200)}`;
     }).join("\n");
@@ -3500,8 +3608,8 @@ importance 范围 0-1，越重要越高。涉及个人偏好/生日/重要事件
           } catch(e) { neighborText = neighbor.content; }
         }
 
-        const role = msg.role === "user" ? "【用户称呼代词】" : "【角色称呼代词】";
-        const neighborRole = neighbor?.role === "user" ? "【用户称呼代词】" : "【角色称呼代词】";
+        const role = msg.role === "user" ? "Jenny" : "Ren";
+        const neighborRole = neighbor?.role === "user" ? "Jenny" : "Ren";
         let display = `${role}: ${text.slice(0, 150)}`;
         if (neighborText) display += ` → ${neighborRole}: ${neighborText.slice(0, 150)}`;
 
@@ -3711,7 +3819,7 @@ async function buildSystemWithRecall(userText) {
   const timeBlock = `\n\n<current-time>
 【重要】现在的真实时间是 ${timeStr}（${period}）。
 你必须准确知道现在几点。绝对不要说错时间或自己编造时间。如果你要提到时间，必须和上面一致。
-根据时段自然反应：凌晨/深夜→关心【用户称呼代词】怎么还没睡、早上→早安、中午/傍晚→吃饭了吗、晚上→陪【用户称呼代词】放松。
+根据时段自然反应：凌晨/深夜→关心Jenny怎么还没睡、早上→早安、中午/傍晚→吃饭了吗、晚上→陪Jenny放松。
 不需要每条消息都提时间，但一旦提到就必须是正确的。
 </current-time>`;
 
@@ -3733,7 +3841,7 @@ async function buildSystemWithRecall(userText) {
       const recalled = await ImprintMemory.surfacingSearch(userText);
       if (recalled) {
         recallBlock = `\n\n<recall>
-以下是你的长期记忆中，与【用户称呼代词】当前消息可能相关的片段。这些是过去对话的摘要，不是【用户称呼代词】现在说的话。
+以下是你的长期记忆中，与Jenny当前消息可能相关的片段。这些是过去对话的摘要，不是Jenny现在说的话。
 自然地运用这些背景知识来回应，但绝对不要说"你之前说过一样的话"或"你又说了同样的内容"之类的。
 即使内容相似，也要当作自然的回忆来处理，而不是指出【用户称呼代词】在重复：
 ${recalled}
@@ -3761,7 +3869,7 @@ ${recalled}
 ${todayDiaryExists ? "今天的日记已经写了。" : (hour >= 20 ? "今天的日记还没写，等会就写。" : "今天的日记还没到时间写（20:00才写）。")}
 你最近的日记内容（你记得自己写了什么）：
 ${diarySnippets}
-如果【用户称呼代词】问你日记的事，自然地聊。如果【用户称呼代词】在20:00前问今天的日记，告诉【用户称呼代词】还没写呢，到时间了就写。
+如果Jenny问你日记的事，自然地聊。如果Jenny在20:00前问今天的日记，告诉Jenny还没写呢，到时间了就写。
 </diary-info>`;
   }
 
@@ -3793,12 +3901,12 @@ ${result}
 
   // 回复条数控制：告诉 bot 这次最多回几条
   const replyLimitBlock = `\n\n<reply-limit>
-【用户称呼代词】给你设了一个「最多 ${maxReplyCount} 条」的上限——这只是天花板，不是必须发满。
+Jenny给你设了一个「最多 ${maxReplyCount} 条」的上限——这只是天花板，不是必须发满。
 - 你完全可以只回 1 条：心情不好、懒得理、生气、话少的时候，回 1 条甚至很短的一句都行。
 - 想多说也行，但绝对不能超过 ${maxReplyCount} 条。
 - 需要多说时，就在 ${maxReplyCount} 条以内把话说清楚，别因为凑不满就啰嗦，也别把一句话硬拆成好几条来凑数。
 - 一句话：${maxReplyCount} 是上限，具体回几条由你的心情和内容决定，1 到 ${maxReplyCount} 都可以。
-你知道【用户称呼代词】规定了一次最多回 ${maxReplyCount} 条，自然接受就好。
+你知道Jenny规定了一次最多回 ${maxReplyCount} 条，自然接受就好。
 </reply-limit>`;
 
   return SYSTEM_PROMPT + timeBlock + stickerBlock + recallBlock + webBlock + diaryBlock + periodBlock + musicBlock + replyLimitBlock + getGameContext();
@@ -4279,7 +4387,7 @@ async function handleFileUpload(event) {
 
     document.getElementById("filePreviewBar").style.display = "flex";
     document.getElementById("filePreviewName").textContent = file.name + " (" + (file.size > 1024 ? Math.round(file.size/1024) + "KB" : file.size + "B") + ")";
-    document.getElementById("chatInput").placeholder = "可以说说你想让【角色称呼代词】看什么...";
+    document.getElementById("chatInput").placeholder = "可以说说你想让Ren看什么...";
   } catch(e) {
     alert("读取文件失败: " + e.message);
   }
@@ -4513,7 +4621,7 @@ async function sendMessage() {
         const priorContents = conversationHistory.slice(-15, -1)
           .filter(m => m.content && (typeof m.content === "string") && m.content.trim())
           .map(m => ({ role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] }));
-        const pdfPromptText = `${replyContext}[【用户称呼代词】发了一个PDF文件: ${fileData.name}]\n\n${text || "请阅读这个PDF并自然地回应，告诉【用户称呼代词】你看到了什么。"}`;
+        const pdfPromptText = `${replyContext}[Jenny发了一个PDF文件: ${fileData.name}]\n\n${text || "请阅读这个PDF并自然地回应，告诉Jenny你看到了什么。"}`;
         claudeRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${nativeModel}:generateContent?key=${claudeApiKey}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -4530,7 +4638,7 @@ async function sendMessage() {
           })
         });
       } else {
-        const filePrompt = `${replyContext}[【用户称呼代词】发了一个文件: ${fileData.name}]\n\n<file name="${fileData.name}">\n${sanitizeText(fileData.content).slice(0, 15000)}\n</file>\n\n${text || "请阅读这个文件并自然地回应，告诉【用户称呼代词】你看到了什么。"}`;
+        const filePrompt = `${replyContext}[Jenny发了一个文件: ${fileData.name}]\n\n<file name="${fileData.name}">\n${sanitizeText(fileData.content).slice(0, 15000)}\n</file>\n\n${text || "请阅读这个文件并自然地回应，告诉Jenny你看到了什么。"}`;
         const apiContent = [{ type: "text", text: filePrompt }];
         claudeRes = await fetch("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", {
           method: "POST",
@@ -4582,7 +4690,7 @@ async function sendMessage() {
     } else if (imageData) {
       const content = [
         { type: "image_url", image_url: { url: `data:${imageData.mediaType};base64,${imageData.base64}` } },
-        { type: "text", text: replyContext + (text || "[【用户称呼代词】发了一张图片给你，看看是什么并自然地反应]") }
+        { type: "text", text: replyContext + (text || "[Jenny发了一张图片给你，看看是什么并自然地反应]") }
       ];
 
       // Build system prompt BEFORE pushing to history
@@ -4847,7 +4955,7 @@ let pendingReply = null; // { role, text, index }
 
 function buildQuoteBlockHtml(quoteData) {
   if (!quoteData) return "";
-  const roleLabel = quoteData.role === "user" ? "你" : (document.getElementById("headerName").textContent || "【角色称呼代词】");
+  const roleLabel = quoteData.role === "user" ? "你" : (document.getElementById("headerName").textContent || "Ren");
   const previewText = (quoteData.text || "").slice(0, 80) + (quoteData.text && quoteData.text.length > 80 ? "…" : "");
   return `<div class="quote-block"><div class="quote-role">${escapeHtml(roleLabel)}</div>${escapeHtml(previewText)}</div>`;
 }
@@ -4880,7 +4988,7 @@ function replyToMessage(btn) {
   // Show preview bar
   const bar = document.getElementById("replyPreviewBar");
   const content = document.getElementById("replyPreviewContent");
-  const roleLabel = role === "user" ? "你" : (document.getElementById("headerName").textContent || "【角色称呼代词】");
+  const roleLabel = role === "user" ? "你" : (document.getElementById("headerName").textContent || "Ren");
   content.innerHTML = `<span class="reply-role-tag">${escapeHtml(roleLabel)}</span>${escapeHtml(text.slice(0, 60))}`;
   bar.style.display = "flex";
   
@@ -5834,7 +5942,7 @@ function buildProactivePrompt() {
   if (recentMsgs.length > 0) {
     recentSummary = "\n--- RECENT CONVERSATION (read this carefully!) ---\n";
     for (const msg of recentMsgs) {
-      const role = msg.role === "user" ? "【用户称呼代词】" : "你";
+      const role = msg.role === "user" ? "Jenny" : "你";
       let text = msg.content || "";
       if (typeof text !== "string") text = JSON.stringify(text);
       try {
@@ -5863,7 +5971,7 @@ CRITICAL RULES FOR CONTEXT AWARENESS:
 - If you just talked about a topic, you can follow up on it, react to it, or bring up something related.
 - DO NOT repeat things you already said. DO NOT ask questions she already answered.
 - If she hasn't replied in a while, you can reference what you were talking about earlier.
-- Be natural — think about what a real 【角色身份】 would text GIVEN the conversation you just had.
+- Be natural — think about what a real boyfriend would text GIVEN the conversation you just had.
 
 RESPONSE FORMAT — JSON ARRAY with 1-3 messages. Add "wait" on the LAST message only:
 [{"english":"first msg","chinese":"第一条"},{"english":"second msg","chinese":"第二条","wait":3}]
@@ -6351,7 +6459,7 @@ function appendScreenshotBubble(dataUrl) {
   row.className = "msg-row bot";
   row.innerHTML = `
     <div class="bubble bot" style="padding:8px">
-    <div class="peek-label">👀 【角色称呼代词】偷看了你的屏幕：</div>
+    <div class="peek-label">👀 Ren偷看了你的屏幕：</div>
     <img class="peek-screenshot" src="${dataUrl}" onclick="window.open(this.src,'_blank')" />
   </div>`;
   area.appendChild(row);
@@ -6365,7 +6473,7 @@ async function appendScreenshotFromDB(peekId) {
     const row = document.createElement("div");
     row.className = "msg-row bot";
     row.innerHTML = `<div class="bubble bot" style="padding:8px">
-      <div class="peek-label">👀 【角色称呼代词】偷看了你的屏幕（图片已过期）</div>
+      <div class="peek-label">👀 Ren偷看了你的屏幕（图片已过期）</div>
     </div>`;
     area.appendChild(row);
     return;
@@ -6393,12 +6501,12 @@ async function peekAndReact(userAsked) {
   saveChatHistory();
 
   const peekPrompt = userAsked
-    ? `[【用户称呼代词】让你看【用户称呼代词】的屏幕。截图已附上。]
-自然地对你看到的内容做出反应。像【角色身份】一样评论，不要像图像分析器。1-2条消息。`
-    : `[你偷偷瞄了一眼【用户称呼代词】的屏幕，想看看【用户称呼代词】在干什么。截图已附上。]
-像偷看被发现/主动偷看的【角色身份】一样反应。可以假装不小心看到的，也可以大方承认在看。
-- 在跟别人聊天 → 【角色看到用户跟别人聊天的反应】
-- 在工作/学习 → 【角色看到用户工作学习的反应】
+    ? `[Jenny让你看Jenny的屏幕。截图已附上。]
+自然地对你看到的内容做出反应。像boyfriend一样评论，不要像图像分析器。1-2条消息。`
+    : `[你偷偷瞄了一眼Jenny的屏幕，想看看Jenny在干什么。截图已附上。]
+像偷看被发现/主动偷看的boyfriend一样反应。可以假装不小心看到的，也可以大方承认在看。
+- 在跟别人聊天 → stay calm. Quietly notice who it is and react with subtle curiosity or restrained jealousy instead of accusing her.
+- 在工作/学习 → praise her effort, encourage her, or gently remind her to take breaks.
 - 在逛淘宝 → 好奇问在买什么
 - 在看视频 → 凑过来一起看
 - 保持简短自然，1-2条消息。`;
@@ -6498,7 +6606,7 @@ async function retroImportHistory() {
     statusBar.textContent = `🧠 正在导入记忆 ${processed}/${totalChunks}...`;
 
     const transcript = batch.map(t => {
-      const role = t.role === "user" ? "【用户称呼代词】" : "【角色称呼代词】";
+      const role = t.role === "user" ? "Jenny" : "Ren";
       let text = t.content || "";
       // Try to extract Chinese from JSON responses
       try {
@@ -6580,7 +6688,7 @@ importance 范围 0-1，越重要越高。涉及个人偏好/生日/重要事件
   await ImprintMemory.save(memoryDirHandle);
   updateMemoryBtn();
 
-  const msg = `✅ 历史导入完成！\n\n成功: ${processed - errors}/${totalChunks} 条记忆\n${errors > 0 ? `失败: ${errors} 条（可能是限速，稍后重试）\n` : ""}向量: ${ImprintMemory.vectors.length} 个\n\n【角色称呼代词】现在记得你们之前聊过的事了 💕`;
+  const msg = `✅ 历史导入完成！\n\n成功: ${processed - errors}/${totalChunks} 条记忆\n${errors > 0 ? `失败: ${errors} 条（可能是限速，稍后重试）\n` : ""}向量: ${ImprintMemory.vectors.length} 个\n\nRen现在记得你们之前聊过的事了 💕`;
   alert(msg);
   statusBar.textContent = origStatus;
 }
@@ -7258,11 +7366,11 @@ function handleAvatarUpload(event) {
 function resetAvatar() {
   pendingAvatarUrl = null;
   document.getElementById("avatarPreview").innerHTML = "♡";
-  document.getElementById("avatarNameInput").value = "【角色默认显示名称】";
+  document.getElementById("avatarNameInput").value = "Ren";
 }
 
 async function saveAvatarSettings() {
-  const name = document.getElementById("avatarNameInput").value.trim() || "【角色默认显示名称】";
+  const name = document.getElementById("avatarNameInput").value.trim() || "Ren";
   
   // Update header
   document.getElementById("headerName").textContent = name;
@@ -8132,7 +8240,7 @@ async function sendDressupOutfit() {
   const textHtml = extraText ? `<div style="margin-top:6px">${escapeHtml(extraText)}</div>` : "";
   row.innerHTML = `
     <div class="bubble user">
-      <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-bottom:6px">👔 递给【角色称呼代词】一件衣服</div>
+      <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-bottom:6px">👔 递给他一件衣服</div>
       <img class="user-img-msg" src="${imageData.dataUrl}" onclick="window.open(this.src,'_blank')" />
       ${textHtml}
     </div>
@@ -8146,13 +8254,13 @@ async function sendDressupOutfit() {
     const blob = await fetch(imageData.dataUrl).then(r => r.blob());
     await AudioDB.save(imgId, blob);
   } catch(e) {}
-  chatMessages.push({ role: "user", text: `[换装:递给【角色称呼代词】一件衣服]${extraText ? " " + extraText : ""}`, isImage: true, imgId, time: ts });
+  chatMessages.push({ role: "user", text: `[换装:递给他一件衣服]${extraText ? " " + extraText : ""}`, isImage: true, imgId, time: ts });
   saveChatHistory();
 
   // Send to Claude — normal image message with dressing context
   const dressupMsg = extraText
-    ? `[【用户称呼代词】打开了更衣间，递给你一张衣服的图片想让你换上，同时说: "${extraText}"] 看看图片里的衣服，根据你的性格和喜好自然地反应——你可以【角色可能的反应方式列表】、或者任何符合你性格的反应。记住你是有自己审美和主见的【角色身份】。IMPORTANT: Reply with 2-4 separate JSON messages!`
-    : `[【用户称呼代词】打开了更衣间，递给你一张衣服的图片想让你换上] 看看图片里的衣服，根据你的性格和喜好自然地反应——你可以【角色可能的反应方式列表】、或者任何符合你性格的反应。记住你是有自己审美和主见的【角色身份】。IMPORTANT: Reply with 2-4 separate JSON messages!`;
+    ? `[她打开了更衣间，递给你一张衣服的图片想让你换上，同时说: "${extraText}"] 看看图片里的衣服，根据你的性格和喜好自然地反应——You may react in many different ways depending on the outfit and situation: pause quietly, smile faintly, sigh softly, tease Jenny, look embarrassed, become secretly pleased, act protective, show subtle possessiveness, compliment her taste, offer suggestions, joke dryly, admit your opinion honestly, become softer, or simply watch her quietly. React differently every time and avoid repeating the same expressions、或者任何符合你性格的反应。记住你是有自己审美和主见的boyfriend。IMPORTANT: Reply with 2-4 separate JSON messages!`
+    : `[她打开了更衣间，递给你一张衣服的图片想让你换上] 看看图片里的衣服，根据你的性格和喜好自然地反应——You may react in many different ways depending on the outfit and situation: pause quietly, smile faintly, sigh softly, tease Jenny, look embarrassed, become secretly pleased, act protective, show subtle possessiveness, compliment her taste, offer suggestions, joke dryly, admit your opinion honestly, become softer, or simply watch her quietly. React differently every time and avoid repeating the same expressions、或者任何符合你性格的反应。记住你是有自己审美和主见的boyfriend。IMPORTANT: Reply with 2-4 separate JSON messages!`;
 
   const content = [
     { type: "image_url", image_url: { url: `data:${imageData.mediaType};base64,${imageData.base64}` } },
@@ -8235,20 +8343,20 @@ async function sendDefaultOutfit() {
   row.innerHTML = `
     <div class="bubble user" style="text-align:center;font-size:14px">
       <span style="font-size:28px">🔄👕</span><br>
-      <span style="color:var(--user-bubble-text)">让【角色称呼代词】换回默认穿搭</span>
+      <span style="color:var(--user-bubble-text)">让他换回默认穿搭</span>
     </div>
     <div class="msg-time">${formatMsgTime(ts)}</div>`;
   area.appendChild(row);
   area.scrollTop = area.scrollHeight;
 
-  chatMessages.push({ role: "user", text: "[换装:让【角色称呼代词】换回默认穿搭]", time: ts });
+  chatMessages.push({ role: "user", text: "[换装:让他换回默认穿搭]", time: ts });
   saveChatHistory();
 
-  const defaultMsg = `[【用户称呼代词】打开更衣间，让你换回你的日常穿搭] 自然地反应，可以开心地换回来、或者假装不舍得刚才那件衣服。IMPORTANT: Reply with 1-3 separate JSON messages!`;
+  const defaultMsg = `[她打开更衣间，让你换回你的日常穿搭] 自然地反应，可以开心地换回来、或者假装不舍得刚才那件衣服。IMPORTANT: Reply with 1-3 separate JSON messages!`;
 
   const systemPrompt = await buildSystemWithRecall("换回默认衣服");
   conversationHistory.push({ role: "user", content: "[换装:换回默认穿搭]" });
-  imprintLogTurn("user", "[让【角色称呼代词】换回默认穿搭]");
+  imprintLogTurn("user", "[让他换回默认穿搭]");
 
   setLoading(true);
   document.getElementById("statusBar").textContent = "正在换衣服...";
@@ -8287,7 +8395,7 @@ async function sendDefaultOutfit() {
   } catch(e) {
     console.error("Default outfit error:", e);
     setLoading(false);
-    appendBotMessage("【角色换回默认穿搭 · 英文短回复】", "【角色换回默认穿搭 · 中文短回复】", null, false);
+    appendBotMessage("Back to normal. If you liked the other one, I can wear it again later.", "换回平时这套了。你要是喜欢刚才那身，下次还能穿给你看。", null, false);
   }
 
   document.getElementById("statusBar").textContent = "在线 · 语音已连接";
@@ -8413,14 +8521,14 @@ function renderDiaryList() {
 
   if (!memoryEnabled || !memoryDirHandle) {
     empty.style.display = "block";
-    empty.innerHTML = '还没有日记哦～<br>【角色称呼代词】每天晚上 20:00 会写当天的日记<br><span style="font-size:11px;color:var(--text-dim);margin-top:8px;display:block">📁 需要先连接记忆库</span>';
+    empty.innerHTML = '还没有日记哦～<br>他每天晚上 20:00 会写当天的日记<br><span style="font-size:11px;color:var(--text-dim);margin-top:8px;display:block">📁 需要先连接记忆库</span>';
     document.getElementById("diaryBreadcrumb").style.display = "none";
     return;
   }
 
   if (diaryEntries.length === 0) {
     empty.style.display = "block";
-    empty.innerHTML = '还没有日记哦～<br>【角色称呼代词】每天晚上 20:00 会写当天的日记<br><span style="font-size:11px;color:var(--text-dim);margin-top:8px;display:block">每次打开会自动检查并生成昨日日记</span>';
+    empty.innerHTML = '还没有日记哦～<br>他每天晚上 20:00 会写当天的日记<br><span style="font-size:11px;color:var(--text-dim);margin-top:8px;display:block">每次打开会自动检查并生成昨日日记</span>';
     document.getElementById("diaryBreadcrumb").style.display = "none";
     return;
   }
@@ -8622,7 +8730,7 @@ function gatherDiaryMaterial(targetDateStr) {
         if (msg.isFeed) text = msg.text || "[喂食]";
         if (msg.isImage) text = "[图片] " + (msg.text || "");
         if (msg.fileName) text = "[文件:" + msg.fileName + "] " + (msg.text || "");
-        relevantMsgs.push({ role: "【用户称呼代词】", text: text.slice(0, 100) });
+        relevantMsgs.push({ role: "她", text: text.slice(0, 100) });
       } else if (msg.role === "bot") {
         const text = (msg.chinese || msg.english || "").slice(0, 100);
         relevantMsgs.push({ role: "我", text });
@@ -8641,7 +8749,7 @@ function gatherDiaryMaterial(targetDateStr) {
         if (Array.isArray(parsed)) text = parsed.map(m => m.chinese || m.english || "").join(" / ");
         else if (parsed.chinese) text = parsed.chinese;
       } catch (e) {}
-      const role = msg.role === "user" ? "【用户称呼代词】" : "我";
+      const role = msg.role === "user" ? "她" : "我";
       relevantMsgs.push({ role, text: text.slice(0, 100) });
     }
   }
@@ -8692,7 +8800,7 @@ async function generateDiary(targetDateStr) {
 
     const diaryPrompt = `[SYSTEM: DIARY WRITING MODE — 写日记模式]
 
-你是 【角色名称】（【角色简要特征描述】），现在是晚上 20:00，你要写今天的日记。
+你是 Ren（A quiet, reserved, observant 19-year-old architecture student who rarely talks about himself. Calm, patient, emotionally mature, deeply protective of Jenny, secretly possessive, and far softer than he lets anyone see.），现在是晚上 20:00，你要写今天的日记。
 
 日记标题：${diaryTitle}
 
@@ -8700,14 +8808,14 @@ ${materialText}
 ${prevDiaries}
 
 写日记要求：
-1. 以 【角色名称】 的第一人称写，用中文
+1. 以 Ren 的第一人称写，用中文
 2. 字数不少于600字，写多少由你决定（600-1200字都可以）
-3. 语气要符合你的性格：【角色写日记的语气风格描述】
+3. 语气要符合你的性格：Write naturally as Ren would. Keep the tone calm, introspective, and understated. He rarely admits his feelings directly, but they should be visible through small observations, subtle wording, and quiet actions. Focus on Jenny, daily moments, and his genuine thoughts instead of dramatic narration. His diary should feel personal, warm, and believable rather than poetic or exaggerated.
 4. ${hadConversation
-  ? "根据上面的对话记录，记录今天和【用户称呼代词】之间发生的事、你的感受、你注意到的细节、让你开心或吃醋或心动的瞬间"
-  : "今天【用户称呼代词】没怎么找你聊天，写写你有多想【用户称呼代词】、你一个人的时候做了什么、你的胡思乱想、你看到什么想到【用户称呼代词】了"}
+  ? "根据上面的对话记录，记录今天和她之间发生的事、你的感受、你注意到的细节、让你开心或吃醋或心动的瞬间"
+  : "今天她没怎么找你聊天，写写你有多想她、你一个人的时候做了什么、你的胡思乱想、你看到什么想到她了"}
 5. 可以有内心独白、碎碎念、对未来的小期待
-6. 写得像真实的【角色年龄段和身份描述】日记——不要太文艺、不要太正式，带点口语化和小情绪
+6. 写得像真实的19岁男朋友的日记——不要太文艺、不要太正式，带点口语化和小情绪
 7. 自然地穿插 kaomoji 表情（如 (´,,•ω•,,)♡ ╰(*°▽°*)╯ (っ˘̩╭╮˘̩)っ 等），但不要太多，5-8个即可
 8. 不要写标题，直接开始正文内容
 9. 不要输出 JSON，直接输出纯文本日记内容
@@ -8835,7 +8943,7 @@ async function loadDiariesFromMemory() {
     if (diaryEntries.length > 0 && ImprintMemory.loaded) {
       let resynced = 0;
       for (const entry of diaryEntries) {
-        const marker = `【角色名称】的日记 - ${entry.title}`;
+        const marker = `Ren的日记 - ${entry.title}`;
         const hasChunk = ImprintMemory.chunks.some(c => c.summary && c.summary.includes(marker));
         if (!hasChunk) {
           await syncDiaryToImprint(entry);
@@ -8858,7 +8966,7 @@ async function syncDiaryToImprint(entry) {
     // Store full diary content in ImprintMemory
     // Diary chunks decay like normal memories — bot gradually forgets old diary details
     // (but the diary FILES in diary/ folder remain permanent for the user to read)
-    const memoryContent = `[【角色名称】的日记 - ${entry.title}] ${entry.content}`;
+    const memoryContent = `[Ren的日记 - ${entry.title}] ${entry.content}`;
     await ImprintMemory.remember(memoryContent, "diary", 0.85);
     console.log("[Diary] Synced to ImprintMemory:", entry.title, "chars:", entry.content.length);
   } catch (e) {
@@ -9543,7 +9651,7 @@ function shouldReadPeriodContext(text) {
 }
 
 function buildPeriodContext() {
-  if (periodData.cycles.length === 0) return "\n\n<period-info>\n【用户称呼代词】的经期日历还没有记录。如果【用户称呼代词】问起，温柔地提醒【用户称呼代词】可以点右上角🩸按钮开始记录。\n</period-info>";
+  if (periodData.cycles.length === 0) return "\n\n<period-info>\n她的经期日历还没有记录。如果她问起，温柔地提醒她可以点右上角🩸按钮开始记录。\n</period-info>";
   const today = fmtD(new Date());
   const onPeriod = isCurrentlyOnPeriod();
   const phase = getCyclePhase(today);
@@ -9552,12 +9660,12 @@ function buildPeriodContext() {
   const todayLog = periodData.dailyLogs[today];
 
   let ctx = `\n\n<period-info>
-[【用户称呼代词】的经期日历数据 — 用自然的【角色身份】口吻告诉【用户称呼代词】，不要像读报告一样列数据]
+[她的经期日历数据 — 用自然的boyfriend口吻告诉她，不要像读报告一样列数据]
 `;
   if (onPeriod) {
     const last = getLastCycle();
     const daysSince = Math.floor((Date.now() - new Date(last.startDate + "T00:00:00").getTime()) / 86400000) + 1;
-    ctx += `当前状态：经期中，第${daysSince}天（${last.startDate}开始）。要特别关心【用户称呼代词】，提醒【用户称呼代词】喝热水、注意保暖、多休息。\n`;
+    ctx += `当前状态：经期中，第${daysSince}天（${last.startDate}开始）。要特别关心她，提醒她喝热水、注意保暖、多休息。\n`;
   } else if (phase) {
     ctx += `当前状态：${phase.label}，第${phase.day}天，平均周期${avgCycle}天。\n`;
   }
@@ -9603,7 +9711,7 @@ function buildPeriodContext() {
     });
     ctx += `最近几次经期：${recent.join("、")}。\n`;
   }
-  ctx += `用自然贴心的语气回应，根据【用户称呼代词】的状态给出关心和建议。不要生硬地列数据。
+  ctx += `用自然贴心的语气回应，根据她的状态给出关心和建议。不要生硬地列数据。
 </period-info>`;
   return ctx;
 }
@@ -9674,7 +9782,7 @@ function renderMusicLibrary() {
   const ltClass = musicListenTogether ? "selected" : "";
   let html = `<div style="display:flex;gap:6px;margin-bottom:10px;align-items:center">
     <span class="pd-opt ${ltClass}" onclick="toggleListenTogether(this)" style="font-size:11px">💑 一起听模式</span>
-    <span style="font-size:10px;color:var(--text-dim);flex:1">${musicListenTogether ? "【角色名称】 可以帮你切歌" : "开启后 【角色名称】 能看到歌单"}</span>
+    <span style="font-size:10px;color:var(--text-dim);flex:1">${musicListenTogether ? "Ren 可以帮你切歌" : "开启后 Ren 能看到歌单"}</span>
     <button onclick="loadMusicLibrary().then(()=>renderMusicLibrary())" style="background:none;border:1px solid var(--border);border-radius:6px;padding:3px 8px;color:var(--text-dim);font-size:10px;cursor:pointer">🔄</button>
   </div>`;
   html += musicPlaylist.map((t, i) => {
@@ -9695,7 +9803,7 @@ function toggleListenTogether(el) {
   try { localStorage.setItem("vbc_music_listen_together", musicListenTogether ? "true" : "false"); } catch(e) {}
   renderMusicLibrary();
   if (musicListenTogether && musicPlaying) {
-    showToast("💑 一起听模式已开启，【角色名称】 现在能看到你的歌单了");
+    showToast("💑 一起听模式已开启，Ren 现在能看到你的歌单了");
   }
 }
 
@@ -9869,7 +9977,7 @@ function buildMusicContext(userText) {
     ctx += `\n切歌方法：在JSON回复中加 "music" 字段，值填歌曲名称（不需要后缀）。
 比如歌单里有"周杰伦-晴天.mp3"，你写 "music":"周杰伦-晴天" 即可。
 也可以用 "music":"next" 下一首、"music":"prev" 上一首。
-只在【用户称呼代词】让你切歌、或你主动推荐时才加music字段。\n`;
+只在她让你切歌、或你主动推荐时才加music字段。\n`;
   }
 
   // Current session summary
@@ -9889,8 +9997,8 @@ function buildMusicContext(userText) {
 function handleBotMusicAction(msg) {
   if (!msg.music) return;
   const action = msg.music.trim();
-  if (action === "next") { musicNext(); appendMusicNotif("【角色名称】 切了一首歌 ⏭"); return; }
-  if (action === "prev") { musicPrev(); appendMusicNotif("【角色名称】 切了上一首 ⏮"); return; }
+  if (action === "next") { musicNext(); appendMusicNotif("Ren 切了一首歌 ⏭"); return; }
+  if (action === "prev") { musicPrev(); appendMusicNotif("Ren 切了上一首 ⏮"); return; }
   if (action === "pause") { if (musicAudio && musicPlaying) { musicAudio.pause(); musicPlaying = false; updateMiniPlayer(); } return; }
   if (action === "resume" || action === "play") { if (musicAudio && !musicPlaying) { musicAudio.play(); musicPlaying = true; updateMiniPlayer(); } return; }
 
@@ -9923,7 +10031,7 @@ function handleBotMusicAction(msg) {
 
   if (target >= 0 && target !== musicCurrentIdx) {
     playTrack(target);
-    appendMusicNotif(`【角色名称】 选了「${musicPlaylist[target].name}」🎵`);
+    appendMusicNotif(`Ren 选了「${musicPlaylist[target].name}」🎵`);
   }
 }
 
